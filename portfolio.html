@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" >
+<link href="bootstrap-4.3.1-dist/css/bootstrap-theme.css" rel="stylesheet" >
+<link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" >
+<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/feature9.css">
+<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/feature10.css">
+<style>
+body {
+   height: 100%;
+   background-image: url("bootstrap-4.3.1-dist/images/img13.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+  }
+h1,h2,h3,h4,h5,h6,p {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90%;
+}
+</style>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color:powderblue;">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about.html">About me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="portfolio.html">Portfolio</a>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    
+    </ul>
+	</nav>
+  
+
+<!-- Menu Container -->
+<div class="w3-container w3-powderblue w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"><b>MY PROJECTS</b></h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Project');" id="myLink">
+	  <font face="Amatic SC">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-black">Projects& PaperPresentation</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'hackathon');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-black">Hackathon & <br>other events</div>
+      </a>
+	  
+      <a href="javascript:void(0)" onclick="openMenu(event, 'hobby');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-black">Non-work <br>Hobbies</div>
+      </a>
+	  </font>
+    </div>
+
+    <div id="Project" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Mobile Application for judicial waste disposal</b> <span class="w3-right w3-tag w3-dark-grey w3-round">1st year</span></h1>
+      <p class="w3-text-red">Presented the project prototye with a team of 4 members in IEEE idea contest conducted by SSN College of Engineering</p>
+      <hr>
+   
+      <h1><b>Smart Alert System</b><span class="w3-right w3-tag w3-dark-grey w3-round">2nd year</span></h1>
+      <p class="w3-text-red">Conferred the project prototye with a team of 3 members in a project competition conducted by Sri Venkateswara College of Engineering</p>
+      <hr>
+      
+      <h1><b>Vaahan Alert</b> <span class="w3-right w3-tag w3-dark-grey w3-round">2nd year</span></h1>
+      <p class="w3-text-red">Submitted project idea on vehicle detection for Smart India Hackathon 2020</p>
+      <hr>
+
+      <h1><b>Symposium project</b> <span class="w3-right w3-tag w3-dark-grey w3-round">2nd year</span></h1>
+      <p class="w3-text-red">Participated in National level technical symposium conducted by Sri Venkateswara College of Engineering and Conferred a project title "Mobile Application
+	   for judicial waste disposal"</p>
+      <hr> 
+	  <h1><b>Paper Presentation</b> <span class="w3-right w3-tag w3-dark-grey w3-round">2nd year</span></h1>
+      <p class="w3-text-red">Participated in National level technical symposium conducted by RMK College of Engineering and Conferred a paper title "Hand Gesture Recognition for sign to 
+	   speech conversion using ML"</p>
+      <hr> 
+
+</div>
+       <div id="hobby" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Singing</b> 
+      <p class="w3-text-red">I have a great pursuit towards carnatic music</p>
+      <hr>
+   
+      <h1><b>Playing Badminton</b> </h1>
+      <p class="w3-text-red">I enjoy and love playing Badminton..</p>
+      <hr>
+      
+      <h1><b>Listening to music</b></h1>
+      <p class="w3-text-red">Music and Rhythm find their way into the secret places of the soul.. </p>
+      <hr>
+      
+      <h1><b>Reading Books</b> </h1>
+      <p class="w3-text-red">Books are my best Travel Companions</p>
+    </div>
+
+ <div id="hackathon" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>24hour Hackathon</b> </h1>
+      <p class="w3-text-red">Took part in 24 hours hackathon conducted by Sri Venkateswara College of Engineering on the project tited "TRASH TROPPERS"</p>
+      <hr>
+   
+      <h1><b>Quiz</b> 
+      <p class="w3-text-red">Took part in quiz competition conducted by quiz club in Sri Venkateswara College of Engineering. </p>
+      <hr>
+      
+      <h1><b>Coding Events</b> </h1>
+      <p class="w3-text-red">Participated in many coding events in Hackerrank</p>
+      <hr>
+      
+      </div><br>
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
